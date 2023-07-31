@@ -1,7 +1,8 @@
 import requests
 import time
 
-initial_url = "https://friends.roblox.com/v1/users/1/followers?limit=100&sortOrder=Desc"
+id = 1 #Replace with the user's ID you want to scrape from
+initial_url = f"https://friends.roblox.com/v1/users/{id}/followers?limit=100&sortOrder=Desc"
 cursor = None
 
 def get_followers(url):
